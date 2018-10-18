@@ -7,7 +7,7 @@ which nginx >/dev/null
 if [ $? -ne 0 ]; then
 	sudo apt-get update
 	sudo apt-get install -y nginx
-	apt-get clean
+	sudo apt-get clean
 	echo "Nginx has been instaled"
 else
 	echo "Nginx is already installed"
